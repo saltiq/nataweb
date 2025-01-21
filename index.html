@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat's Corner ^_^</title>
+
+    <style>
+        /* Build Mobile  */
+        /* CSS Essentials */
+        *
+        {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        html,body
+        {
+            height:100%;
+        }
+
+        /* CSS Colors */
+        body
+        {
+            line-height:1.5;
+            padding-top:200px;
+            background-image:url(Images/background.jpg);
+            background-size:cover;
+            background-attachment:fixed;
+            overscroll-behavior:none;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #container
+        {
+            background-color:rgb(134, 190, 255);
+            width:90%;
+            max-width:1000px;
+            padding:2rem;
+            margin: 0 auto;
+            margin-top:50px;
+            min-width:320px;
+        }
+
+        #wrapper
+        {
+            max-width:960px;
+            margin: 0 auto;
+        }
+
+        #pageheader
+        {
+            min-height:30px;
+            padding:1rem;
+            background: rgb(0,63,207);
+            background: linear-gradient(0deg, rgba(0,63,207,1) 0%, rgba(255,255,255,1) 100%);
+            color:white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #logo
+        {
+            grid-area:l1;
+        }
+
+        #ph1
+        {
+            grid-area:ph1;
+        }
+
+        #ph2
+        {
+            grid-area:ph2;
+        }
+
+        /* Scrolling Banner  */
+        #scroll-container
+        {
+            border: 3px solid none;
+            overflow:hidden;
+            background:none;
+            padding:2px;
+            margin:2px;
+        }
+
+        #scroll-text
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            text-shadow:1px 1px 2px black;
+            /* animation properties */
+            -moz-transform: translateX(100%);
+            -webkit-transform:translateX(100%);
+            transform:translateX(100%);
+
+            -moz-animation: my-animation 15s linear infinite;
+            -webkit-animation: my-animation 15s linear infinite;
+            animation: my-animation 15s linear infinite;
+        }
+
+        /* For Chrome */
+
+        @-webkit-keyframes my-animation
+        {
+            from { -webkit-transform:translateX(100%);}
+            to { -webkit-transform:translateX(100%);}
+        }
+
+        @keyframes my-animation
+        {
+            from
+            {
+                -moz-transform:translateX(100%);
+                -webkit-transform:translateX(100%);
+                transform:translateX(100%);
+            }
+            to
+            {
+                -moz-transform: translateX(-100%);
+                -webkit-transform:translateX(-100%);
+                transform:translateX(-100%);
+            }
+        }
+
+        /* End Animation */
+
+        #pagenav
+        {
+            background: rgb(245,250,236);
+            background: radial-gradient(circle, rgba(245,250,236,1) 0%, rgba(128,181,255,1) 100%);
+            padding:1rem; 
+        }
+        
+        #osiris
+        {
+            background-image:url(Images/osirischibi.png);
+            height:200px;
+            width:200px;
+            display:flex;
+            margin:auto;
+        }
+
+        #naut
+        {
+            background-color:purple;
+            height:200px;
+            width:200px;
+            display:flex;
+        }
+
+        .OC
+        {
+            display:flex;
+            flex-direction:row;
+            margin:auto;
+            text-align:center;
+        }
+
+        #pagemain
+        {
+            background-color:pink;
+            padding:1rem;
+            min-height:250px;
+            grid-area:pm;
+            text-align:center;
+        }
+
+        #pagefooter
+        {
+            background-color:yellow;
+            padding:1rem;
+            text-align:center;
+        }
+
+
+        #subfooter
+        {
+            padding:1rem;
+            background-color:brown;
+            min-height:150px;
+            text-align:center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <header id="pageheader">
+                    <h1>NataWeb</h1>
+                    <h2>I'll come up with something eventually</h2>
+                    <div id="scroll-container">
+                        <div id="scroll-text">!! Welcome To https://saltiq.neocities.org/ !!</div>
+                    </div>
+            </header>
+            <hr>
+            <nav id="pagenav" class="OC">
+                <div class="OC" id="osiris"></div>
+                <div class="OC" id="naut">nautilus</div>
+            </nav>
+
+            <main id="pagemain">
+                <h1>About Me!</h1>
+                <p>yada yada abt me</p>
+            </main>
+            
+            <footer id="pagefooter">
+                <p>links</p>
+            </footer>
+
+            <footer id="subfooter">
+                <p>special mentionsz.. idk</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
