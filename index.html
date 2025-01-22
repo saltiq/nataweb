@@ -34,13 +34,15 @@
 
         #container
         {
-            background-color:rgb(134, 190, 255);
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,97,255,0.9178265056022409) 49%, rgba(255,255,255,1) 100%);
             width:90%;
             max-width:1000px;
             padding:2rem;
             margin: 0 auto;
             margin-top:50px;
             min-width:320px;
+            border-radius:20px;
         }
 
         #wrapper
@@ -51,35 +53,41 @@
 
         #pageheader
         {
-            min-height:30px;
+            height:150px;
             padding:1rem;
-            background: rgb(0,63,207);
-            background: linear-gradient(0deg, rgba(0,63,207,1) 0%, rgba(255,255,255,1) 100%);
+            background:rgba(255, 255, 255, 0.468);
             color:white;
+            text-shadow:2px 2px 2px black;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
+            position:relative;
+            display:flex;
+            border-radius:20px;
+            border:2px solid white;
+            box-shadow:0 0 10px white;
+        }
+
+        #titles
+        {
+            background:none;
         }
 
         #logo
         {
-            grid-area:l1;
+            height:100px;
+            width:100px;
+            position:relative;
+            background-color:red;
+            left:-10px;
+            display:inline-block;
         }
 
-        #ph1
-        {
-            grid-area:ph1;
-        }
-
-        #ph2
-        {
-            grid-area:ph2;
-        }
 
         /* Scrolling Banner  */
         #scroll-container
         {
-            border: 3px solid none;
+            border: 3px solid black;
             overflow:hidden;
-            background:none;
+            background-color:white;
             padding:2px;
             margin:2px;
         }
@@ -191,12 +199,16 @@
     <div id="container">
         <div id="wrapper">
             <header id="pageheader">
-                    <h1>NataWeb</h1>
-                    <h2>I'll come up with something eventually</h2>
-                    <div id="scroll-container">
-                        <div id="scroll-text">!! Welcome To https://saltiq.neocities.org/ !!</div>
+                    <div id="logo"></div>
+                    <div id="titles">
+                        <h1>NataWeb</h1>
+                        <h2>I'll come up with something eventually</h2>
+                    </div>
                     </div>
             </header>
+            <div id="scroll-container">
+                <div id="scroll-text">!! Welcome To https://saltiq.neocities.org/ !!</div>
+
             <hr>
             <nav id="pagenav" class="OC">
                 <div class="OC" id="osiris"></div>
